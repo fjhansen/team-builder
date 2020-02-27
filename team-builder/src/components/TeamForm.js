@@ -8,6 +8,7 @@ const TeamForm = props => {
   
   const [member, setMember] =useState({
     name: "",
+    pfp:"",
     role: "",
     email: ""
   })
@@ -41,6 +42,10 @@ const TeamForm = props => {
       
       <input onChange={handleChanges} id="email" type="text" name="email" value=
       {member.email}/>
+      
+      <label htmlFor="pfp">Profile Pic:</label>
+      <input onChange={handleChanges} id="pfp" type="url" name="email" value=
+      {member.pfp}/>
 
       <button type='submit'>Add Team Member</button>
 

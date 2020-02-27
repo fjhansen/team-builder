@@ -11,9 +11,10 @@ function App() {
   const [members, setMembers] = useState([
     {
       id: 1,
-      name: "Name",
-      role: "Role",
-      email: "email@service.com"
+      name: "Pawz",
+      pfp: 'https://66.media.tumblr.com/avatar_6302d3f4b4dc_128.pnj',
+      role: "Help Desk",
+      email: "Pawz4Lyfe@petz.com"
     }
   ])
 

@@ -6,6 +6,7 @@ const Team = props => {
       {props.members.map(member => (
         <div className="team" key={member.id}>
           <h2>{member.name}</h2>
+          <img src={member.pfp} alt={member.name}></img>
       <p>{member.role}</p>
       <p>{member.email}</p>
       </div>
