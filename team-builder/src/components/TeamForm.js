@@ -31,20 +31,20 @@ const TeamForm = props => {
     <form className="team-form"onSubmit={submitForm}>
       <label htmlFor="name">Name</label>
 
-      <input onChange={handleChanges} id="name" type="text" name="name" value={member.name}/>
+      <input onChange={handleChanges} id="name" type="text" name="name" placeholder="Prefered Name"value={member.name}/>
       
       <label htmlFor="role">Role</label>
 
-      <input onChange={handleChanges} id="role" type="text" name="role" value=
+      <input onChange={handleChanges} id="role" type="text" placeholder="Role Name"name="role" value=
       {member.role}/>
 
       <label htmlFor="email">Email</label>
       
-      <input onChange={handleChanges} id="email" type="email" name="email" value=
+      <input onChange={handleChanges} id="email" type="email" placeholder="aka@petz.com"name="email" value=
       {member.email}/>
       
       <label htmlFor="pfp">Profile Pic:</label>
-      <input onChange={handleChanges} id="pfp" type="url" name="pfp" value={member.pfp}/>
+      <input onChange={handleChanges} id="pfp" type="url" name="pfp" placeholder="Paste image address!"value={member.pfp}/>
 
       <button type='submit'>Add Team Member</button>
 
