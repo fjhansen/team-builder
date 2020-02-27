@@ -14,7 +14,8 @@ function App() {
       name: "Pawz",
       pfp: 'https://66.media.tumblr.com/avatar_6302d3f4b4dc_128.pnj',
       role: "Help Desk",
-      email: "Pawz4Lyfe@petz.com"
+      email: "Pawz4Lyfe@petz.com",
+
     }
   ])
 
@@ -22,6 +23,7 @@ function App() {
     const newMember = {
       id: Date.now(),
       name: member.name,
+      pfp: member.pfp,
       role: member.role,
       email: member.email
     };
@@ -30,8 +32,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>My Team</h1>
-      <TeamForm addNewMember={addNewMember}/>
+      <h1>Petz Team</h1>
+      <TeamForm className="team-form" addNewMember={addNewMember}/>
       <Team members={members}/>
     </div>
   );
