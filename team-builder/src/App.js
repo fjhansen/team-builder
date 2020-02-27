@@ -16,10 +16,21 @@ function App() {
       email: "email@service.com"
     }
   ])
+
+  const addNewMember = member => {
+    const newMember = {
+      id: Date.now(),
+      name: member.name,
+      role: member.role,
+      email: member.email
+    };
+    setMembers([...members, newMember]);
+  }
+
   return (
     <div className="App">
       <h1>My Team</h1>
-      <TeamForm/>
+      <TeamForm addNewMember={addNewMember}/>
       <Team members={members}/>
     </div>
   );
